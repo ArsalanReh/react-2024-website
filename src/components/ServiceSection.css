@@ -1,0 +1,121 @@
+/* Service Section Styles */
+.service-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem; /* Adjusted size for better fit */
+  margin-bottom: 15px;
+  color: #222;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Poppins', sans-serif; /* Attractive font for heading */
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1.2rem; /* Slightly larger for readability */
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto; /* Center the paragraph */
+}
+
+/* Search Bar Styles */
+.search-bar {
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+.search-bar button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Service List Layout (Grid Layout) */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-item {
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  text-align: left; /* Ensures description is aligned to the left */
+  display: flex;
+  flex-direction: column;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.service-item h3 {
+  font-size: 1rem; /* Adjusted size for consistent heading */
+  margin-bottom: 8px;
+  color: #333;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif; /* Complementary font for service titles */
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #666;
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 15px; /* Space between the paragraph and bottom of the card */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .service-list {
+    grid-template-columns: 1fr; /* Stack on smaller screens */
+  }
+
+  .search-bar input {
+    width: 80%;
+  }
+}
